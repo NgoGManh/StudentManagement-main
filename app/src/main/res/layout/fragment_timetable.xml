@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TimetableFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="top"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center|top"
+        android:text="THỜI KHOÁ BIỂU"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="70dp"
+        >
+
+        <TableRow
+            android:background="@drawable/row_border"
+            >
+
+            <TextView
+                android:text="Tiết"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Thứ 2"
+                android:background="@drawable/cell_border"
+                />
+
+            <TextView
+                android:background="@drawable/cell_border"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Thứ 3" />
+
+            <TextView
+                android:text="Thứ 4"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                />
+            <TextView
+                android:text="Thứ 5"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                />
+            <TextView
+                android:text="Thứ 6"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                />
+            <TextView
+                android:text="Thứ 7"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@drawable/cell_border"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        style="@style/PrimaryButton"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_icon"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+</FrameLayout>

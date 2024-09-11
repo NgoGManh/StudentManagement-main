@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_infoStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_school"
+        android:title="Thông tin học sinh" />
+    <item
+        android:id="@+id/item_transcript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_grade"
+        android:title="Kết quả học tập" />
+    <item
+        android:id="@+id/item_tuition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/ic_tuiton"
+        android:title="Học phí" />
+</menu>

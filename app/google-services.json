@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "96337260152",
+    "project_id": "studentmanagement-36c15",
+    "storage_bucket": "studentmanagement-36c15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96337260152:android:bb820130d73aad2153c78d",
+        "android_client_info": {
+          "package_name": "com.huflit.studentmanagement"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlH8NbjjssIg_MdLyvtBCYum2Xm26tuOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

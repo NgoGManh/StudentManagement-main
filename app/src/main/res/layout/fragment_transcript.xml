@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AnnouncementFragment">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="top"
+        android:background="@color/gray" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center|top"
+        android:text="KẾT QUẢ HỌC TẬP"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <FrameLayout
+        android:id="@+id/containerSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/background_spinner"
+        android:layout_gravity="end">
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/gray"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/containerTranscript"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/black"
+        android:text="Miệng"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvType1"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="110dp"
+        android:paddingEnd="20dp"
+        tools:listitem="@layout/item_container_grade" />
+
+    <TextView
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="180dp"
+        android:textColor="@color/black"
+        android:text="15 phút"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvType2"
+        android:layout_width="180dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="180dp"
+        android:paddingEnd="20dp"
+        tools:listitem="@layout/item_container_grade" />
+
+    <TextView
+        android:id="@+id/type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"
+        android:text="Giữa kỳ"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:background="@color/gray"
+        android:layout_marginTop="290dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvType3"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="250dp"
+        android:paddingEnd="20dp"
+        tools:listitem="@layout/item_container_grade" />
+
+    <TextView
+        android:id="@+id/type4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="320dp"
+        android:textColor="@color/black"
+        android:text="Cuối kỳ"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvType4"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="20dp"
+        android:paddingEnd="20dp"
+        tools:listitem="@layout/item_container_grade" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="@color/gray"
+            android:layout_marginTop="370dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="390dp"
+            android:textColor="@color/black"
+            android:text="Trung bình môn"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="390dp"
+            android:textColor="@color/black"
+            android:text="9.8"
+            android:textSize="18sp" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+    <ImageView
+        android:id="@+id/imgAdd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        style="@style/PrimaryButton"
+        android:layout_margin="10dp"
+        android:background="@drawable/background_icon"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white" />
+
+
+
+</FrameLayout>
